@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta lang="ja">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript学習1</title>
+  </head>
+  <body>
+    <p>ここを書き換える</p>
+    <p id="2">こんにちは</p>
+    <script>
+      'use strict';
+      document.querySelector("p").textContent=("書き換えましたよ")
+      document.write("Hello World !!");
+      console.log("Hello World !!")
+      document.getElementById("2").textContent=("タコス🌮")
+      const weight = window.prompt("体重を入力してください")
+      const height = window.prompt("身長を入力してください")
+      console.log(`あなたの体重は${weight}kgです。`)
+      console.log(`あなたの身長は${height}mです。`)
+      let bmi
+      const height2 = height**2
+      bmi=weight/height2
+      console.log(`あなたのBMIは${bmi}です。`)
+      if (bmi>=18.5&&bmi<25){
+        console.log("適正体重です。")
+      }else if (bmi>25){
+        console.log("肥満です。")
+      }else {
+        console.log("低体重です。")
+      }
+      for (let i=1; i<11 ; i+=1){
+        if (i %2===0){
+            console.log(`${i}は偶数`)
+        } else {
+            console.log(`${i}は奇数`)
+        }
+      }
+    </script>
+  </body>
+</html>
